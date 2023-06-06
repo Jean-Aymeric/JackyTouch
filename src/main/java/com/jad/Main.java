@@ -8,8 +8,10 @@ import com.jad.tuning.CompetitionFin;
 import com.jad.tuning.FlamesOnTheSides;
 import com.jad.tuning.WideRim;
 
-public class Main {
-    public static void main(String[] args) {
+public enum Main {
+    ;
+
+    public static void main(final String[] args) {
         final ICar nissanSkyline =
                 new FlamesOnTheSides(new CompetitionFin(new WideRim(new ColorNeon(new NissanSkyline(), "mauve"))));
         final ICar fiatPanda =

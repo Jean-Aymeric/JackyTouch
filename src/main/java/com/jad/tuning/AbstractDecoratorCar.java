@@ -4,6 +4,7 @@ import com.jad.car.CarCategory;
 import com.jad.car.ICar;
 
 abstract class AbstractDecoratorCar implements ICar {
+    @SuppressWarnings("FieldNamingConvention")
     private final ICar car;
 
     public AbstractDecoratorCar(final ICar car) {

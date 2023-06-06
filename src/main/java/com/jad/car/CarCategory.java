@@ -1,5 +1,6 @@
 package com.jad.car;
 
+@SuppressWarnings("FieldNamingConvention")
 public enum CarCategory {
     SPORTIVE("Sportive"),
     SUV("SUV"),
