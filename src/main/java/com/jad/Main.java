@@ -3,11 +3,17 @@ package com.jad;
 import com.jad.car.FiatPanda;
 import com.jad.car.ICar;
 import com.jad.car.NissanSkyline;
+import com.jad.tuning.ColorNeon;
+import com.jad.tuning.CompetitionFin;
+import com.jad.tuning.FlamesOnTheSides;
+import com.jad.tuning.WideRim;
 
 public class Main {
     public static void main(String[] args) {
-        ICar nissanSkyline = new NissanSkyline();
-        ICar fiatPanda = new FiatPanda();
+        final ICar nissanSkyline =
+                new FlamesOnTheSides(new CompetitionFin(new WideRim(new ColorNeon(new NissanSkyline(), "mauve"))));
+        final ICar fiatPanda =
+                new FlamesOnTheSides(new CompetitionFin(new WideRim(new ColorNeon(new FiatPanda(), "or"))));
         System.out.println(nissanSkyline.getInformations());
         System.out.println(fiatPanda.getInformations());
 
