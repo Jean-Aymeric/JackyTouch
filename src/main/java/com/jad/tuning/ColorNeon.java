@@ -3,7 +3,7 @@ package com.jad.tuning;
 import com.jad.car.CarCategory;
 import com.jad.car.ICar;
 
-public class ColorNeon extends AbstractDecoratorCar {
+public abstract class ColorNeon extends AbstractDecoratorCar {
     private final String color;
 
     public ColorNeon(final ICar car, final String color) {
