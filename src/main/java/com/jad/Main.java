@@ -10,5 +10,12 @@ public class Main {
         ICar fiatPanda = new FiatPanda();
         System.out.println(nissanSkyline.getInformations());
         System.out.println(fiatPanda.getInformations());
+
+        // Todo
+        // la possibilité d'ajouter :
+        // - des néons de couleurs sous le chassis
+        // - des jantes larges
+        // - un aileron de compétitions
+        // - des flammes sur les cotés
     }
 }
